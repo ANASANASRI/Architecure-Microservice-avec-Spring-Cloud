@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to right,#5F6F52, #1B4242);
+  color: #000000;
+}
+nav{
+  background: black;
+  border-color: black;
+}
