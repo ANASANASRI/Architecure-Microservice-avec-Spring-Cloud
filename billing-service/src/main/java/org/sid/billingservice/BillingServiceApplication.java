@@ -23,7 +23,7 @@ public class BillingServiceApplication {
     CommandLineRunner commandLineRunner(){
         return args -> {
             vaultTemplate.opsForVersionedKeyValue("secret")
-                         .put("keypair", Map.of("privkey", "54321", "pubkey", "8999"));
+                         .put("keypair", Map.of("privkey", "@thman08", "pubkey", "20402050"));
         };
     }
 

@@ -26,7 +26,7 @@ public class InventoryServiceApplication {
             for (int i=1 ; i<10 ; i++){
                 productRepository.saveAll(List.of(
                         Product.builder()
-                                .name("Computer"+ i)
+                                .name("Smartphone"+ i)
                                 .price(1200+Math.random()*10000)
                                 .quantity(1+random.nextInt(200))
                                 .build()

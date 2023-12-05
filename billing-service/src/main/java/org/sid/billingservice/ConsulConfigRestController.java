@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Map;
 
 @RestController
-//@RefreshScope //refresher la configuration a chaque fois elle change
+
 public class ConsulConfigRestController {
 
     @Autowired
@@ -17,10 +17,6 @@ public class ConsulConfigRestController {
     @Autowired
     private MyVaultConfig myVaultConfig;
 
-    //@Value("${token.accessTokenTimeout}")
-    //private long accessTokenTimeout;
-    //@Value("${token.refreshTokenTimeout}")
-    //private long refreshTokenTimeout;
 
     @GetMapping("/myConfig")
     public Map<String, Object> myConfig(){

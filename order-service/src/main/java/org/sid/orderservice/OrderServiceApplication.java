@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Random;
 
 @SpringBootApplication
-@EnableFeignClients //Activer FeignClient
+@EnableFeignClients
 public class OrderServiceApplication {
 
     public static void main(String[] args) {

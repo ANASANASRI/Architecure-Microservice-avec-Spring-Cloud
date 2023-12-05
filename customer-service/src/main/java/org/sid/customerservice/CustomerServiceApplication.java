@@ -17,12 +17,12 @@ public class CustomerServiceApplication {
     }
 
     @Bean
-    public CommandLineRunner initData(CustomerRepository customerRepository) {
-        return (String[] args) -> {
+    CommandLineRunner start(CustomerRepository customerRepository){
+        return args -> {
             customerRepository.saveAll(List.of(
-                    Customer.builder().name("Anas").email("AnasAnasri@gmail.com").build(),
-                    Customer.builder().name("Hassan").email("hassan@gmail.com").build(),
-                    Customer.builder().name("Imane").email("imane@gmail.com").build()
+                    Customer.builder().name("anas anasri").email("anasanasri@gmail.com").build(),
+                    Customer.builder().name("othman abid").email("othmanabid@gmail.com").build(),
+                    Customer.builder().name("said fettah").email("saidfettah@gmail.com").build()
             ));
             customerRepository.findAll().forEach(System.out::println);
         };
