@@ -2,28 +2,28 @@
   <div class="row">
     <div class="col-md-6">
       <div class="card">
-        <div class="card-header">Order ID: {{orderId}}</div>
+        <div class="card-header bg-dark text-white">Order ID: {{orderId}}</div>
         <div class="card-body text-sm-start">
           <ul class="list-group">
-            <li class="list-group-item">Order Id : {{orderDetails.id}}</li>
-            <li class="list-group-item">Date : {{orderDetails.createdAt | date : 'dd/MM/yyyy'}}</li>
-            <li class="list-group-item">Status : {{orderDetails.status}}</li>
+            <li class="list-group-item">Order ID: {{orderDetails.id}}</li>
+            <li class="list-group-item">Date: {{orderDetails.createdAt | date : 'dd/MM/yyyy'}}</li>
+            <li class="list-group-item">Status: {{orderDetails.status}}</li>
 
-            <li class="list-group-item">Customer Id : {{orderDetails.customer.id}}</li>
-            <li class="list-group-item">Customer Name : {{orderDetails.customer.name}}</li>
-            <li class="list-group-item">Customer Email : {{orderDetails.customer.email}}</li>
+            <li class="list-group-item">Customer ID: {{orderDetails.customer.id}}</li>
+            <li class="list-group-item">Customer Name: {{orderDetails.customer.name}}</li>
+            <li class="list-group-item">Customer Email: {{orderDetails.customer.email}}</li>
           </ul>
         </div>
       </div>
     </div>
     <div class="col-md-6">
       <div class="card">
-        <div class="card-header">Product Items</div>
+        <div class="card-header bg-dark text-white">Product Items</div>
         <div class="card-body">
           <table class="table table-sm">
             <thead>
             <tr class="bg-dark text-white">
-              <th>Product Id</th>
+              <th>Product ID</th>
               <th>Product Name</th>
               <th>Quantity</th>
               <th>Price</th>
@@ -51,4 +51,3 @@
     </div>
   </div>
 </div>
-

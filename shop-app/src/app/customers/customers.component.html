@@ -1,19 +1,22 @@
 <div class="container">
-  <table class="table" *ngIf="customers">
-  <thead>
-  <tr>
-    <td>ID</td>
-    <td>NAME</td>
-    <td>EMAIL</td>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let c of customers._embedded.customers">
-    <td>{{c.id}}</td>
-    <td>{{c.name}}</td>
-    <td>{{c.email}}</td>
-    <button class="btn btn-primary" (click)="getOrders(c)">Orders</button>
-  </tr>
-  </tbody>
+  <table class="table table-striped table-bordered table-hover" *ngIf="customers">
+    <thead class="thead-dark">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let c of customers._embedded.customers">
+      <td>{{c.id}}</td>
+      <td>{{c.name}}</td>
+      <td>{{c.email}}</td>
+      <td>
+        <button class="btn btn-primary" (click)="getOrders(c)">Orders</button>
+      </td>
+    </tr>
+    </tbody>
   </table>
 </div>
