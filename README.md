@@ -3,6 +3,16 @@
 ## Overview
 Welcome to our enchanting microservices-based e-commerce application! Our journey is fueled by the mystique of technologies like Consul Discovery, Spring Cloud Config, Spring Cloud Gateway, Angular, and other magical services.
 
+### FRONTEND ANGULAR
+#### Customer Chronicles
+![Customers List Chronicles](captures/customers.jpg)
+
+#### Product Prodigy
+![Products List Mystique](captures/products.jpg)
+
+#### Order Oracle
+![Order Details Oracle](captures/order-details.jpg)
+
 ### 1. CONFIG SERVICE
 #### Consul's Secret Gathering
 ![Consul Registered Services](captures/all-registered.jpg)
@@ -36,16 +46,3 @@ Welcome to our enchanting microservices-based e-commerce application! Our journe
 ### 6. BILLING-SERVICE with Consul Config and Vault
 #### Vault Secrets and Consul Config Runes
 ![Secrets Configuration Glyphs](captures/secrets.PNG)
-
-### 7. FRONTEND ANGULAR
-#### Customer Chronicles
-![Customers List Chronicles](captures/customers.jpg)
-
-#### Product Prodigy
-![Products List Mystique](captures/products.jpg)
-
-#### Order Odyssey
-![Orders List Odyssey](captures/cust-orders.jpg)
-
-#### Order Oracle
-![Order Details Oracle](captures/order-details.jpg)
